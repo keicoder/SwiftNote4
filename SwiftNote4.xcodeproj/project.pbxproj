@@ -26,6 +26,7 @@
 		C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */; };
 		C1FBCE3B18C4493E000A6AAE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3A18C4493E000A6AAE /* Image.m */; };
 		C1FBCE3E18C4493E000A6AAE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3D18C4493E000A6AAE /* Note.m */; };
+		C1FBCE4118C44B2D000A6AAE /* AddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE4018C44B2D000A6AAE /* AddEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		C1FBCE3A18C4493E000A6AAE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = ../Image.m; sourceTree = "<group>"; };
 		C1FBCE3C18C4493E000A6AAE /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = ../Note.h; sourceTree = "<group>"; };
 		C1FBCE3D18C4493E000A6AAE /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = ../Note.m; sourceTree = "<group>"; };
+		C1FBCE3F18C44B2D000A6AAE /* AddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditViewController.h; sourceTree = "<group>"; };
+		C1FBCE4018C44B2D000A6AAE /* AddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +186,8 @@
 				C1FBCE0718C433BD000A6AAE /* AppDelegate.m */,
 				C1FBCE3018C43961000A6AAE /* NoteListsTableViewController.h */,
 				C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */,
+				C1FBCE3F18C44B2D000A6AAE /* AddEditViewController.h */,
+				C1FBCE4018C44B2D000A6AAE /* AddEditViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				C1FBCE0818C433BD000A6AAE /* AppDelegate.m in Sources */,
 				C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */,
 				C1FBCE0418C433BD000A6AAE /* main.m in Sources */,
+				C1FBCE4118C44B2D000A6AAE /* AddEditViewController.m in Sources */,
 				C1FBCE3E18C4493E000A6AAE /* Note.m in Sources */,
 				C1FBCE0B18C433BD000A6AAE /* SwiftNote4.xcdatamodeld in Sources */,
 				C1FBCE3B18C4493E000A6AAE /* Image.m in Sources */,
