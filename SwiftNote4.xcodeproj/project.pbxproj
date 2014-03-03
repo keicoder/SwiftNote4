@@ -27,6 +27,7 @@
 		C1FBCE3B18C4493E000A6AAE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3A18C4493E000A6AAE /* Image.m */; };
 		C1FBCE3E18C4493E000A6AAE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3D18C4493E000A6AAE /* Note.m */; };
 		C1FBCE4118C44B2D000A6AAE /* AddEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE4018C44B2D000A6AAE /* AddEditViewController.m */; };
+		C1FBCE4318C46B5A000A6AAE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FBCE4218C46B5A000A6AAE /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C1FBCE3D18C4493E000A6AAE /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = ../Note.m; sourceTree = "<group>"; };
 		C1FBCE3F18C44B2D000A6AAE /* AddEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEditViewController.h; sourceTree = "<group>"; };
 		C1FBCE4018C44B2D000A6AAE /* AddEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEditViewController.m; sourceTree = "<group>"; };
+		C1FBCE4218C46B5A000A6AAE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FBCE4318C46B5A000A6AAE /* QuartzCore.framework in Frameworks */,
 				C1FBCDF818C433BD000A6AAE /* CoreGraphics.framework in Frameworks */,
 				C1FBCDFC18C433BD000A6AAE /* CoreData.framework in Frameworks */,
 				C1FBCDFA18C433BD000A6AAE /* UIKit.framework in Frameworks */,
@@ -117,6 +120,7 @@
 		C1FBCDF418C433BD000A6AAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1FBCE4218C46B5A000A6AAE /* QuartzCore.framework */,
 				C1FBCDF518C433BD000A6AAE /* Foundation.framework */,
 				C1FBCDF718C433BD000A6AAE /* CoreGraphics.framework */,
 				C1FBCDF918C433BD000A6AAE /* UIKit.framework */,
