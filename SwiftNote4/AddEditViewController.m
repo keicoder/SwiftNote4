@@ -13,7 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 //텍스트 뷰
-@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UITextView *noteTextView;
 
 @end
 
@@ -35,8 +35,8 @@
     
     [super viewWillAppear:animated];
     
-    if ([self.textView.text length] == 0) {
-//        [self.textView becomeFirstResponder]; //뷰가 나타날 때 키보드 팝 업
+    if ([self.noteTextView.text length] == 0) {
+//        [self.noteTextView becomeFirstResponder]; //뷰가 나타날 때 키보드 팝 업
 //        self.saveButton.enabled = NO; //save 버튼 비활성
     }
 }
@@ -47,7 +47,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 

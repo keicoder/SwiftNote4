@@ -55,6 +55,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">2014-03-03 15:15:11.982 SwiftNote4[7790:70b] Cannot find executable for CFBundle 0x8cb1af0 &lt;/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle&gt; (not loaded)
+2014-03-03 15:15:12.022 SwiftNote4[7790:70b] Running AppDelegate 'application:didFinishLaunchingWithOptions:'
+2014-03-03 15:15:12.029 SwiftNote4[7790:70b] Running NoteListsTableViewController 'viewDidLoad'
+2014-03-03 15:15:12.031 SwiftNote4[7790:70b] Running NoteListsTableViewController 'tableView:numberOfRowsInSection:'
+2014-03-03 15:15:12.031 SwiftNote4[7790:70b] Running NoteListsTableViewController 'notes'
+2014-03-03 15:15:13.476 SwiftNote4[7790:70b] Running AddEditViewController 'viewWillAppear:'
+2014-03-03 15:15:27.950 SwiftNote4[7790:70b] Running AddEditViewController 'cancelButtonPressed:'
+2014-03-03 15:15:29.262 SwiftNote4[7790:70b] Running AddEditViewController 'viewWillAppear:'
+2014-03-03 15:15:31.624 SwiftNote4[7790:70b] Running AddEditViewController 'cancelButtonPressed:'</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -75,8 +84,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cancelButton" destination="Z3M-zH-7aX" id="58u-5n-qAv"/>
+                        <outlet property="noteTextView" destination="J2P-rz-0BI" id="Y32-mX-jnp"/>
                         <outlet property="saveButton" destination="H4d-YX-s7d" id="IdV-GQ-NVe"/>
-                        <outlet property="textView" destination="J2P-rz-0BI" id="c4u-cM-eQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAN-My-S3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
