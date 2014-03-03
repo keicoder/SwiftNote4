@@ -24,6 +24,8 @@
 		C1FBCE2118C433BD000A6AAE /* SwiftNote4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE2018C433BD000A6AAE /* SwiftNote4Tests.m */; };
 		C1FBCE2F18C438EA000A6AAE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FBCE2E18C438EA000A6AAE /* Storyboard.storyboard */; };
 		C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */; };
+		C1FBCE3B18C4493E000A6AAE /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3A18C4493E000A6AAE /* Image.m */; };
+		C1FBCE3E18C4493E000A6AAE /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3D18C4493E000A6AAE /* Note.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		C1FBCE2E18C438EA000A6AAE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		C1FBCE3018C43961000A6AAE /* NoteListsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListsTableViewController.h; sourceTree = "<group>"; };
 		C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListsTableViewController.m; sourceTree = "<group>"; };
+		C1FBCE3918C4493E000A6AAE /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Image.h; path = ../Image.h; sourceTree = "<group>"; };
+		C1FBCE3A18C4493E000A6AAE /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Image.m; path = ../Image.m; sourceTree = "<group>"; };
+		C1FBCE3C18C4493E000A6AAE /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Note.h; path = ../Note.h; sourceTree = "<group>"; };
+		C1FBCE3D18C4493E000A6AAE /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Note.m; path = ../Note.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				C1FBCE0918C433BD000A6AAE /* SwiftNote4.xcdatamodeld */,
+				C1FBCE3C18C4493E000A6AAE /* Note.h */,
+				C1FBCE3D18C4493E000A6AAE /* Note.m */,
+				C1FBCE3918C4493E000A6AAE /* Image.h */,
+				C1FBCE3A18C4493E000A6AAE /* Image.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -292,7 +302,9 @@
 				C1FBCE0818C433BD000A6AAE /* AppDelegate.m in Sources */,
 				C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */,
 				C1FBCE0418C433BD000A6AAE /* main.m in Sources */,
+				C1FBCE3E18C4493E000A6AAE /* Note.m in Sources */,
 				C1FBCE0B18C433BD000A6AAE /* SwiftNote4.xcdatamodeld in Sources */,
+				C1FBCE3B18C4493E000A6AAE /* Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
