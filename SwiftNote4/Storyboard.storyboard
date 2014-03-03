@@ -50,6 +50,15 @@
                     <view key="view" contentMode="scaleToFill" id="ZI6-9S-jtg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="J2P-rz-0BI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="XEh-8l-Zrg">
@@ -67,6 +76,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="Z3M-zH-7aX" id="58u-5n-qAv"/>
                         <outlet property="saveButton" destination="H4d-YX-s7d" id="IdV-GQ-NVe"/>
+                        <outlet property="textView" destination="J2P-rz-0BI" id="c4u-cM-eQE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAN-My-S3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,6 +106,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TYl-hm-IWR" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ey1-XU-5z6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

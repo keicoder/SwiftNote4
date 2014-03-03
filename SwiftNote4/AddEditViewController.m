@@ -9,9 +9,11 @@
 #import "AddEditViewController.h"
 
 @interface AddEditViewController ()
-
+//바 버튼 아이템
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+//텍스트 뷰
+@property (strong, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -25,6 +27,20 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (debug==1) {NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));}
+    
+    [super viewWillAppear:animated];
+    
+    if ([self.textView.text length] == 0) {
+//        [self.textView becomeFirstResponder]; //뷰가 나타날 때 키보드 팝 업
+//        self.saveButton.enabled = NO; //save 버튼 비활성
+    }
+}
+
 
 #pragma mark - 메모리 경고
 
