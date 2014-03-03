@@ -22,6 +22,8 @@
 		C1FBCE1718C433BD000A6AAE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1FBCDFB18C433BD000A6AAE /* CoreData.framework */; };
 		C1FBCE1F18C433BD000A6AAE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C1FBCE1D18C433BD000A6AAE /* InfoPlist.strings */; };
 		C1FBCE2118C433BD000A6AAE /* SwiftNote4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE2018C433BD000A6AAE /* SwiftNote4Tests.m */; };
+		C1FBCE2F18C438EA000A6AAE /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1FBCE2E18C438EA000A6AAE /* Storyboard.storyboard */; };
+		C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		C1FBCE1C18C433BD000A6AAE /* SwiftNote4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwiftNote4Tests-Info.plist"; sourceTree = "<group>"; };
 		C1FBCE1E18C433BD000A6AAE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C1FBCE2018C433BD000A6AAE /* SwiftNote4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftNote4Tests.m; sourceTree = "<group>"; };
+		C1FBCE2E18C438EA000A6AAE /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		C1FBCE3018C43961000A6AAE /* NoteListsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteListsTableViewController.h; sourceTree = "<group>"; };
+		C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteListsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +120,10 @@
 		C1FBCDFD18C433BD000A6AAE /* SwiftNote4 */ = {
 			isa = PBXGroup;
 			children = (
-				C1FBCE0618C433BD000A6AAE /* AppDelegate.h */,
-				C1FBCE0718C433BD000A6AAE /* AppDelegate.m */,
-				C1FBCE0C18C433BD000A6AAE /* Images.xcassets */,
-				C1FBCE0918C433BD000A6AAE /* SwiftNote4.xcdatamodeld */,
+				C1FBCE2B18C43875000A6AAE /* Classes */,
+				C1FBCE2D18C438CA000A6AAE /* Storyboard */,
+				C1FBCE2A18C43869000A6AAE /* CoreData */,
+				C1FBCE2C18C4387D000A6AAE /* Assets */,
 				C1FBCDFE18C433BD000A6AAE /* Supporting Files */,
 			);
 			path = SwiftNote4;
@@ -151,6 +156,41 @@
 				C1FBCE1D18C433BD000A6AAE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1FBCE2A18C43869000A6AAE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBCE0918C433BD000A6AAE /* SwiftNote4.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		C1FBCE2B18C43875000A6AAE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBCE0618C433BD000A6AAE /* AppDelegate.h */,
+				C1FBCE0718C433BD000A6AAE /* AppDelegate.m */,
+				C1FBCE3018C43961000A6AAE /* NoteListsTableViewController.h */,
+				C1FBCE3118C43961000A6AAE /* NoteListsTableViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C1FBCE2C18C4387D000A6AAE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBCE0C18C433BD000A6AAE /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		C1FBCE2D18C438CA000A6AAE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				C1FBCE2E18C438EA000A6AAE /* Storyboard.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +270,7 @@
 			files = (
 				C1FBCE0218C433BD000A6AAE /* InfoPlist.strings in Resources */,
 				C1FBCE0D18C433BD000A6AAE /* Images.xcassets in Resources */,
+				C1FBCE2F18C438EA000A6AAE /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1FBCE0818C433BD000A6AAE /* AppDelegate.m in Sources */,
+				C1FBCE3218C43961000A6AAE /* NoteListsTableViewController.m in Sources */,
 				C1FBCE0418C433BD000A6AAE /* main.m in Sources */,
 				C1FBCE0B18C433BD000A6AAE /* SwiftNote4.xcdatamodeld in Sources */,
 			);
