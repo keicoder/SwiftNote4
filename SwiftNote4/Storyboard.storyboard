@@ -52,7 +52,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XEh-8l-Zrg"/>
+                    <navigationItem key="navigationItem" id="XEh-8l-Zrg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Z3M-zH-7aX">
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="aBj-yT-VOh" id="qIi-uT-Tv5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="H4d-YX-s7d">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="aBj-yT-VOh" id="B6n-Wc-TOR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="Z3M-zH-7aX" id="58u-5n-qAv"/>
+                        <outlet property="saveButton" destination="H4d-YX-s7d" id="IdV-GQ-NVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAN-My-S3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
