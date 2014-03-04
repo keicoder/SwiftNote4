@@ -18,6 +18,19 @@
 {
     if (debug==1) {NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));}
     
+    
+    
+    
+    // style the navigation bar
+    UIColor* navColor = [UIColor colorWithRed:0.37 green:0.49 blue:0.6 alpha:1];
+    [[UINavigationBar appearance] setBarTintColor:navColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    
+    // make the status bar white
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    
     return YES;
 }
 
