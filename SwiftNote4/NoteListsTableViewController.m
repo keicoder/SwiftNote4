@@ -46,7 +46,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if (debug==1) {NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));}
-    return [self.notes count];
+//    return [self.notes count];
+    return 10;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -55,6 +56,14 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    for (NSUInteger i = 0; i < 10; ++i) {
+        NSLog (@"index: %i", i);
+        NSString *textLableText = [NSString stringWithFormat:@"index: %i", i];
+        
+        cell.textLabel.text = textLableText;
+    }
+    
+    
     
     return cell;
 }

@@ -21,7 +21,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="aBj-yT-VOh" kind="push" identifier="EditNewNote" id="rle-UA-PvT"/>
+                                    <segue destination="TYl-hm-IWR" kind="modal" identifier="EditNewNote" id="tvF-fZ-bCv"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -57,7 +57,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2P-rz-0BI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <mutableString key="text">
+                                <string key="text">
     [[self.noteTextView layer] setCornerRadius:10]; //텍스트 뷰 코너 곡선 적용
     
     [self.noteTextView setTextContainerInset:UIEdgeInsetsMake(10, 20, 10, 20)]; //텍스트 뷰 인셋 iOS 7
@@ -78,7 +78,7 @@
     [super viewWillAppear:animated];
     
     if ([self.noteTextView.text length] == 0) {
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAN-My-S3R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1130" y="388"/>
+            <point key="canvasLocation" x="1220" y="-136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jwb-tk-ok4">
@@ -145,7 +145,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPf-1O-LvF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="388"/>
+            <point key="canvasLocation" x="839" y="-136"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -154,6 +154,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="rle-UA-PvT"/>
+        <segue reference="tvF-fZ-bCv"/>
     </inferredMetricsTieBreakers>
 </document>
