@@ -5,6 +5,7 @@
 //  Created by jun on 2014. 3. 3..
 //  Copyright (c) 2014년 jun. All rights reserved.
 //  CoreData 적용 진행 140307 현재
+//  remote repository 생성 140308 현재
 
 #import "AppDelegate.h"
 
