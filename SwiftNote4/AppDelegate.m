@@ -6,6 +6,7 @@
 //  Copyright (c) 2014년 jun. All rights reserved.
 //  CoreData 적용 진행 140307 현재
 //  remote repository 생성 140308 현재
+//  recreate ssh
 
 #import "AppDelegate.h"
 
