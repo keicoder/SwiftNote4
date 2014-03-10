@@ -12,4 +12,8 @@
 
 @property (strong, nonatomic) NSMutableArray *notes;
 
+// AppDelegate의 Core Data 참조
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+
 @end

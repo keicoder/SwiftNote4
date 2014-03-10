@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hFA-2I-i9G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13D12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hFA-2I-i9G">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -57,28 +57,17 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J2P-rz-0BI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <string key="text">
-    [[self.noteTextView layer] setCornerRadius:10]; //텍스트 뷰 코너 곡선 적용
-    
-    [self.noteTextView setTextContainerInset:UIEdgeInsetsMake(10, 20, 10, 20)]; //텍스트 뷰 인셋 iOS 7
-    
-    self.noteTextView.alwaysBounceVertical = YES; //텍스트 뷰 Vertical 바운스
-    self.noteTextView.keyboardDismissMode = UIScrollViewKeyboardDismissModeInteractive; //텍스트 뷰 키보드 Dismiss Mode Interactive
-    self.noteTextView.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody]; //텍스트 뷰 폰트
-    [self.noteTextView setBackgroundColor:[UIColor colorWithRed:0.95 green:0.95 blue:0.95 alpha:1]]; //텍스트 뷰 백그라운드 컬러
-    
-    [self registerForKeyboardNotifications];
-}
+                                <mutableString key="text">UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
+    CGFloat keyboardHeight = UIInterfaceOrientationIsLandscape(orientation) ? _keyboardSize.width : _keyboardSize.height;
+    sel
 
+f.noteTextView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - keyboardHeight);UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarO
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    if (debug==1) {NSLog(@"Running %@ '%@'", self.class, NSStringFromSelector(_cmd));}
-    
-    [super viewWillAppear:animated];
-    
-    if ([self.noteTextView.text length] == 0) {
-</string>
+rientation;
+    CGFloat keyboardHeight = UIInterfaceOrientationIsLandscape(orientation) ? _keyboardSize.width : _keyboardSize.height;
+    self.noteTextView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 
+
+keyboardHeight);</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <connections>
@@ -94,7 +83,7 @@
                                 <action selector="cancelButtonPressed:" destination="aBj-yT-VOh" id="qIi-uT-Tv5"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="H4d-YX-s7d">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="H4d-YX-s7d">
                             <connections>
                                 <action selector="saveButtonPressed:" destination="aBj-yT-VOh" id="B6n-Wc-TOR"/>
                             </connections>
